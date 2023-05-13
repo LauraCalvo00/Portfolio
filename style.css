@@ -1,0 +1,294 @@
+/*Importar fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+#logo {
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-color: #3E3E3E;
+    padding: 1%;
+}
+
+nav>a{
+    margin-right: 6%;
+    font-size: 200%;
+}
+
+
+a.opcion{
+    margin-left: 8px;
+    color: #A78FBF;
+    font-weight: bold;
+    font-family: Anton;
+    text-decoration: none;
+  }
+
+/*HERO*/
+
+#hero{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    min-height: 750px;
+    align-items: center;
+}
+
+.textoHero{
+    font-size: 150px;
+    letter-spacing: -.02em;
+    color: #A78FBF;
+    font-family: Anton;
+    animation-name: textoHero;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+.videoHero{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.descripcion-titulo>h1{
+    font-family: Anton;
+    font-size: 80px;
+    color: #625173;
+}
+
+#descripcion{
+    background-color: #A78FBF;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: 100%;
+ }
+
+ .texto-imagen{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+.descripcion-texto{
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  font-size: 19px;
+  width: 75%;
+  padding: 14px;
+  text-align:left;
+  justify-content: center;
+  gap: 20px;
+  max-width: 75%;
+}
+
+.descripcion-texto>p{
+    font-size: 30px;
+}
+
+.formacion-estudios>h3{
+    font-family: Anton;
+    font-size: 35px;
+}
+
+.formacion-estudios>p{
+    font-size: 30px
+}
+
+#Laura{
+    max-height: 500px;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 75%;    
+}
+
+.formacion-titulo>h1{
+    font-family: Anton;
+    color: #A78FBF;
+    font-size: 80px;
+}
+
+#formacion{
+    background-color: #625173;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+ }
+
+.formacion-texto{
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  font-size: 19px;
+  width: 75%;
+  padding: 14px;
+  text-align:left;
+  justify-content: center;
+  gap: 20px;
+  color:#A78FBF;
+}
+
+#proyecto{
+    background-color: #A78FBF;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #260826;
+}
+
+/*TRABAJOS*/
+
+#Trabajo{
+    background-color: #A78FBF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Trabajo>p{
+    color: #625173;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#texto-trabajo{
+    font-family: Anton;
+    color: #625173;
+    font-size: 80px;
+    margin-top: 100px;
+}
+
+#trabajos{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    
+}
+
+#trabajo1{
+    grid-area: 2/2/3/3;
+}
+
+#trabajo2{
+    grid-area: 2/4/3/5;
+}
+
+#trabajo3{
+    grid-area: 2/6/3/7;
+}
+
+/*FOOTER*/
+
+footer{
+        background-color: #2B2B2B;
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #Footer-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 75%;
+    }
+    
+    .textoFooter{
+        display: flex;
+        flex-direction: row;
+        color: #A78FBF;
+    }
+    
+    .textoFooter div{
+        margin: 8px;
+    }
+
+    #logoFooter{
+        order: 2;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    #logoFooter img{
+        justify-self: flex-start;
+        width: 52px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .footer-icon{
+        width: 32px;
+    }
+    
+    #textoFooter1{
+        order: 1;
+    }
+
+    #textoFooter2{
+        order: 3;
+    }
+
+    .textoFooter>div{
+        font-size: 30px;
+        margin: 20px;
+    }
+
+@keyframes textoHero{
+    0%{
+        color: #A78FBF;
+    }
+    25%{
+        color: #625173;
+    }
+    50%{
+        color: #2B2B2B;
+    }
+}
